@@ -1,0 +1,1 @@
+# These pages for people who wants to find their road in this world. If You don't find your road in these pages you must close it and go away. 
