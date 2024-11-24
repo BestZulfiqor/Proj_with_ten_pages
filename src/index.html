@@ -8,10 +8,11 @@
 </head>
 
 <body class="max-w-[1400px] m-auto">
-	<navbar class="flex justify-between bg-[#FEDCD1] p-5 items-center font-semibold">
+	<div id="top"></div>
+	<navbar class="flex justify-between bg-[#FEDCD1] p-5 items-center font-semibold gap-[10px]">
 		<div class="flex gap-[60px]">
 			<img src="/img/logo.png" alt="">
-			<div class="flex gap-[40px]">
+			<div class="hidden lg:flex gap-[40px]">
 				<a class="hover:underline" href="#">About Us</a>
 				<a class="hover:underline" href="#">Courses</a>
 				<a class="hover:underline" href="#">Events</a>
@@ -19,30 +20,31 @@
 				<a class="hover:underline" href="#">Contacts</a>
 			</div>
 		</div>
-		<div class="flex gap-[30px]">
-			<button class="text-white bg-[#FC4A27] p-3 px-7 rounded-lg">Get consultation</button>
-			<div class="flex gap-[10px] items-center">
+		<div class="flex gap-[10px]">
+			<button class="text-white bg-[#FC4A27] p-3 rounded-lg">Get consultation</button>
+			<div class="flex gap-[5px] items-center">
 				<img src="/img/Profile.png" alt="">
 				<button class="mr-[10px]">Log in / Register</button>
 			</div>
 		</div>
 	</navbar>
 	<header class="flex flex-col bg-[#FEDCD1] p-5">
-		<div class="flex items-center justify-between bg-[#FEDCD1] font-semibold">
-			<div class="flex flex-col gap-[25px] w-[35%]">
+		<div class="flex flex-col lg:flex-row lg:items-center justify-between bg-[#FEDCD1] font-semibold">
+			<div class="flex flex-col gap-[24px] lg:w-[35%]">
 				<div class="flex items-center gap-[20px]">
 					<img src="/img/hover.png" alt="">
 					<p>Play showreel</p>
 				</div>
-				<h1 class="text-[60px] mb-[64px] font-bold">Enjoy studying with Createx Online Courses</h1>
-				<div class="flex gap-[24px]">
+				<h1 class="text-[40px] lg:text-[60px] lg:mb-[64px] font-bold">Enjoy studying with Createx Online Courses
+				</h1>
+				<div class="flex gap-[24px] mb-[10px]">
 					<button class="text-[orangered] border-[orangered] border-2 p-3 px-7 rounded-lg ">About us</button>
 					<button class="text-white bg-[#FC4A27] p-3 px-7 rounded-lg">Explore courses</button>
 				</div>
 			</div>
 			<img src="/img/illustration.png" alt="">
 		</div>
-		<div class="flex justify-between items-center mt-[80px] mb-[30px]">
+		<div class="flex flex-col lg:flex-row justify-between lg:items-center mt-[80px] mb-[30px]">
 			<div class="flex items-center gap-[12px]">
 				<p class="text-[46px] font-bold">1200</p>
 				<p>Students graduated</p>
@@ -64,8 +66,8 @@
 			</div>
 		</div>
 	</header>
-	<main class="flex flex-col gap-[50px] my-[50px]">
-		<section class="flex justify-between">
+	<main class="flex flex-col gap-[50px] my-[50px] p-2">
+		<section class="flex flex-col lg:flex-row justify-between items-start gap-[20px]">
 			<img src="/img/image.png" alt="">
 			<div class="flex flex-col gap-[20px] items-start">
 				<div class="flex flex-col gap-[10px]">
@@ -98,10 +100,411 @@
 						<p>Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</p>
 					</div>
 				</div>
-				<button class="text-white bg-[#FC4A27] p-3 px-7 rounded-lg">More about us</button>
+				<button class="text-white bg-[#FC4A27] p-3 px-7 rounded-lg hover:bg-orange-600">More about us</button>
+			</div>
+		</section>
+		<section>
+			<div class="flex justify-between items-center">
+				<div>
+					<p class="font-semibold">Ready to learn?</p>
+					<h2 class="text-[46px] font-bold">Featured Courses</h2>
+				</div>
+				<button
+					class="text-[orangered] border-2 border-[#FC4A27] p-3 px-7 rounded-lg hover:bg-[orangered] hover:text-white">View
+					all courses</button>
+			</div>
+			<div class="grid lg:grid-rows-2 lg:grid-cols-2 gap-[30px] my-[60px]">
+				<div
+					class="flex flex-col lg:flex-row gap-[32px] items-center lg:shadow-[0px_0px_2px_gray] rounded-lg lg:text-start text-center">
+					<img src="/img/image copy.png" alt="">
+					<div class="flex flex-col lg:items-start items-center justify-center lg:w-[50%] gap-[20px]">
+						<p class="py-1 px-2 text-white bg-[#03CEA4] rounded-lg">Marketing</p>
+						<p class="text-[20px] font-bold">The Ultimate Google Ads Training Course</p>
+						<div class="flex gap-[5px]">
+							<p class="text-[red]">$100</p>
+							<p class="text-[gray]">| by Jerome Bell</p>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex flex-col lg:flex-row gap-[32px] items-center lg:shadow-[0px_0px_2px_gray] rounded-lg lg:text-start text-center">
+					<img src="/img/image copy 2.png" alt="">
+					<div class="flex flex-col lg:items-start items-center justify-center lg:w-[50%] gap-[20px]">
+						<p class="py-1 px-2 text-white bg-[#5A87FC] rounded-lg">Management</p>
+						<p class="text-[20px] font-bold">Prduct Management Fundamentals</p>
+						<div class="flex gap-[5px]">
+							<p class="text-[red]">$480</p>
+							<p class="text-[gray]">| by Marvin McKinney</p>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex flex-col lg:flex-row gap-[32px] items-center lg:shadow-[0px_0px_2px_gray] rounded-lg lg:text-start text-center">
+					<img src="/img/image copy 3.png" alt="">
+					<div class="flex flex-col lg:items-start items-center justify-center lg:w-[50%] gap-[20px]">
+						<p class="py-1 px-2 text-white bg-[#F4982E] rounded-lg">HR & Recruting</p>
+						<p class="text-[20px] font-bold">HR Management and Analytics</p>
+						<div class="flex gap-[5px]">
+							<p class="text-[red]">$200</p>
+							<p class="text-[gray]">| by Leslie Alexander Li</p>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex flex-col lg:flex-row gap-[32px] items-center lg:shadow-[0px_0px_2px_gray] rounded-lg lg:text-start text-center">
+					<img src="/img/image copy 4.png" alt="">
+					<div class="flex flex-col lg:items-start items-center justify-center lg:w-[50%] gap-[20px]">
+						<p class="py-1 px-2 text-white bg-[#03CEA4] rounded-lg">Marketing</p>
+						<p class="text-[20px] font-bold">Brand Management & PR Communications</p>
+						<div class="flex gap-[5px]">
+							<p class="text-[red]">$530</p>
+							<p class="text-[gray]">| by Kristin Watson</p>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex flex-col lg:flex-row gap-[32px] items-center lg:shadow-[0px_0px_2px_gray] rounded-lg lg:text-start text-center">
+					<img src="/img/image copy 5.png" alt="">
+					<div class="flex flex-col lg:items-start items-center justify-center lg:w-[50%] gap-[20px]">
+						<p class="py-1 px-2 text-white bg-[#5A87FC] rounded-lg">Management</p>
+						<p class="text-[20px] font-bold">Business Development Management</p>
+						<div class="flex gap-[5px]">
+							<p class="text-[red]">$400</p>
+							<p class="text-[gray]">| by Dianne Russell</p>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex flex-col lg:flex-row gap-[32px] items-center lg:shadow-[0px_0px_2px_gray] rounded-lg lg:text-start text-center">
+					<img src="/img/image copy 6.png" alt="">
+					<div class="flex flex-col lg:items-start items-center justify-center lg:w-[50%] gap-[20px]">
+						<p class="py-1 px-2 text-white bg-[#F13370] rounded-lg">Design</p>
+						<p class="text-[20px] font-bold">Graphic Design Basic</p>
+						<div class="flex gap-[5px]">
+							<p class="text-[red]">$500</p>
+							<p class="text-[gray]">| by Guy Hawkins</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="flex flex-col gap-[40px]">
+			<div class="text-center">
+				<p class="font-semibold">Our benefits</p>
+				<h2 class="text-[46px] font-bold">That's how we do it</h2>
+			</div>
+			<div class="flex flex-col lg:flex-row justify-between">
+				<div class="flex  items-center gap-[10px] px-9 py-2 text-[orangered] border-2 border-[orangered]">
+					<img src="/img/Star.png" alt="">
+					<p>Experienced Tutors</p>
+				</div>
+				<div class="flex  items-center gap-[10px] px-9 py-2 text-[gray]">
+					<img src="/img/like.png" alt="">
+					<p>Feedback & Support</p>
+				</div>
+				<div class="flex  items-center gap-[10px] px-9 py-2 text-[gray]">
+					<img src="/img/Layouts.png" alt="">
+					<p>24/7 Online Library</p>
+				</div>
+				<div class="flex  items-center gap-[10px] px-9 py-2 text-[gray]">
+					<img src="/img/Chat.png" alt="">
+					<p>Community</p>
+				</div>
+			</div>
+		</section>
+		<section class="flex flex-col lg:flex-row justify-between lg:items-center">
+			<div class="flex flex-col gap-[20px] lg:w-[40%]">
+				<p class="text-[32px] font-bold">Only practicing tutors</p>
+				<p class="text-[gray]">Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum
+					suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit
+					diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa
+					ut amet. Amet enim, nisi tempus vehicula.</p>
+			</div>
+			<img src="/img/illustration (1).png" alt="">
+		</section>
+		<section class="flex flex-col gap-[50px] my-[80px] bg-[#FEDCD2] items-center py-[80px] p-2">
+			<div class="text-center">
+				<p class="font-semibold">Our Events</p>
+				<h2 class="text-[46px] font-bold">Lectures & workshops</h2>
+			</div>
+			<div class="flex flex-col gap-[24px] p-2">
+				<div
+					class="flex flex-col lg:flex-row items-start lg:items-center gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-auto w-[95%] m-auto">
+					<div class="flex gap-[20px] items-center">
+						<div class="text-[48px] text-[red]">
+							05
+						</div>
+						<div>
+							<p class="font-bold text-[20px]">August</p>
+							<p class="text-[gray]">11:00 – 14:00</p>
+						</div>
+					</div>
+					<div class="lg:w-[66%]">
+						<p class="text-[20px] font-bold">Formation of the organizational structure of the company in the
+							face of uncertainty.</p>
+						<p class="text-[gray]">Onine master-class</p>
+					</div>
+					<button
+						class="text-[orangered] border-2 border-[#FC4A27] p-3 px-9 rounded-lg hover:bg-[orangered] hover:text-white">View
+						more</button>
+				</div>
+				<div
+					class="flex flex-col lg:flex-row items-start lg:items-center gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-[100%] w-[95%] m-auto">
+					<div class="flex gap-[20px] items-center">
+						<div class="text-[48px] text-[red]">
+							24
+						</div>
+						<div>
+							<p class="font-bold text-[20px]">July</p>
+							<p class="text-[gray]">11:00 – 12:30</p>
+						</div>
+					</div>
+					<div class="lg:w-[66%]">
+						<p class="text-[20px] font-bold">Building a customer service department. Best Practices.</p>
+						<p class="text-[gray]">Onine lecture</p>
+					</div>
+					<button
+						class="text-[orangered] border-2 border-[#FC4A27] p-3 px-9 rounded-lg hover:bg-[orangered] hover:text-white">View
+						more</button>
+				</div>
+				<div
+					class="flex flex-col lg:flex-row items-start lg:items-center gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-auto w-[95%] m-auto">
+					<div class="flex gap-[20px] items-center">
+						<div class="text-[48px] text-[red]">
+							16
+						</div>
+						<div>
+							<p class="font-bold text-[20px]">August</p>
+							<p class="text-[gray]">10:00 – 13:00</p>
+						</div>
+					</div>
+					<div class="lg:w-[66%]">
+						<p class="text-[20px] font-bold">How to apply methods of speculative design in practice.
+							Worldbuilding prototyping.</p>
+						<p class="text-[gray]">Onine workshop</p>
+					</div>
+					<button
+						class="text-[orangered] border-2 border-[#FC4A27] p-3 px-9 rounded-lg hover:bg-[orangered] hover:text-white">View
+						more</button>
+				</div>
+			</div>
+			<div class="flex gap-[40px]">
+				<h2 class="text-[24px]">Do you want more?</h2>
+				<button
+					class="text-white bg-[#FC4A27] p-3 px-9 rounded-lg hover:bg-[orangered] hover:text-white">Explore
+					all events</button>
+			</div>
+		</section>
+		<section
+			class="flex flex-col lg:flex-row justify-between py-[30px] shadow-lg relative p-2 gap-[20px] h-[400px]">
+			<div class="flex gap-[30px] flex-col lg:w-[30%] ">
+				<div>
+					<p class="font-semibold">Createx Certificate</p>
+					<h2 class="text-[46px] font-bold">Your expertise will be confirmed</h2>
+				</div>
+				<p class="text-[gray]">We are accredited by international professional organizations and institutes:</p>
+			</div>
+			<img class="lg:absolute right-0 bottom-200" src="/img/image (1).png" alt="">
+		</section>
+		<section class="flex flex-col mt-[200px] gap-[60px] bg-[#F4F5F6] p-2">
+			<div class="flex flex-col lg:flex-row justify-between items-center">
+				<div>
+					<p class="font-semibold">Createx Certificate</p>
+					<h2 class="lg:text-[46px] text-[30px] font-bold">Your expertise will be confirmed</h2>
+				</div>
+				<div class="flex items-center text-[20px] gap-[10px]">
+					<button
+						class="w-[40px] h-[40px] hover:bg-[orangered] hover:text-white rounded-full hover:cursor-pointer">←</button>
+					<button
+						class="w-[40px] h-[40px] hover:bg-[orangered] hover:text-white rounded-full hover:cursor-pointer">→</button>
+				</div>
+			</div>
+			<div class="grid lg:grid-cols-4 lg:grid-rows-1 place-content-center gap-[20px]">
+				<div class="flex flex-col gap-[10px] items-center">
+					<img src="/img/image copy 9.png" alt="">
+					<div>
+						<p class="font-semibold text-[20px]">Dianne Russell</p>
+						<p class="text-[gray]">Founder and CEO</p>
+					</div>
+				</div>
+				<div class="flex flex-col gap-[10px] items-center">
+					<img src="/img/image copy 10.png" alt="">
+					<div>
+						<p class="font-semibold text-[20px]">Dianne Russell</p>
+						<p class="text-[gray]">Founder and CEO</p>
+					</div>
+				</div>
+				<div class="flex flex-col gap-[10px] items-center">
+					<img src="/img/image copy 11.png	" alt="">
+					<div>
+						<p class="font-semibold text-[20px]">Dianne Russell</p>
+						<p class="text-[gray]">Founder and CEO</p>
+					</div>
+				</div>
+				<div class="flex flex-col gap-[10px] items-center">
+					<img src="/img/image copy 12.png	" alt="">
+					<div>
+						<p class="font-semibold text-[20px]">Dianne Russell</p>
+						<p class="text-[gray]">Founder and CEO</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="flex flex-col gap-[60px] my-[50px]">
+			<div class="flex flex-col lg:flex-row justify-between items-center">
+				<div>
+					<p class="font-semibold">Our blog</p>
+					<h2 class="lg:text-[46px] text-[30px] font-bold">Latest posts</h2>
+				</div>
+				<button
+					class="bg-[orangered] hover:bg-[orangered] text-white rounded-lg p-2 px-7 hover:cursor-pointer">Go
+					to blog</button>
+			</div>
+			<div class="grid lg:grid-cols-3 gap-[20px]">
+				<div class="relative flex flex-col gap-[20px]">
+					<img src="/img/image copy 13.png" alt="">
+					<div class="flex gap-[5px] absolute top-5 left-5 items-center bg-white p-1 rounded-lg px-2">
+						<img src="/img/mic.png" alt="">
+						<p>Podcast</p>
+					</div>
+					<div class="flex gap-[10px] text-[gray]">
+						<p>Marketing</p>
+						<p>|</p>
+						<div class="flex gap-[5px] items-center">
+							<img src="/img/Calendar.png" alt="">
+							<p>September 4, 2020</p>
+						</div>
+						<p>|</p>
+						<div class="flex gap-[5px] items-center">
+							<img src="/img/Clock.png" alt="">
+							<p>36 min</p>
+						</div>
+					</div>
+					<div class="flex flex-col">
+						<p class="font-bold text-[20px]">What is traffic arbitrage and does it really make money?</p>
+						<p class="text-[gray]">Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...</p>
+					</div>
+					<div class="flex gap-[10px] items-center">
+						<p class="font-semibold">Listen</p>
+						<p class="text-[30px] text-[red] font-bold">→</p>
+					</div>
+				</div>
+				<div class="relative flex flex-col gap-[20px]">
+					<img src="/img/image copy 14.png" alt="">
+					<div class="flex gap-[5px] absolute top-5 left-5 items-center bg-white p-1 rounded-lg px-2">
+						<img src="/img/Play.png" alt="">
+						<p>Video</p>
+					</div>
+					<div class="flex gap-[10px] text-[gray]">
+						<p>Management</p>
+						<p>|</p>
+						<div class="flex gap-[5px] items-center">
+							<img src="/img/Calendar.png" alt="">
+							<p>August 25, 2020</p>
+						</div>
+						<p>|</p>
+						<div class="flex gap-[5px] items-center">
+							<img src="/img/Clock.png" alt="">
+							<p>45 min</p>
+						</div>
+					</div>
+					<div class="flex flex-col">
+						<p class="font-bold text-[20px]">What to do and who to talk to if you want to get feedback on the product</p>
+						<p class="text-[gray]">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis
+							proin dignissim lacus, purus gravida...</p>
+					</div>
+					<div class="flex gap-[10px] items-center">
+						<p class="font-semibold">Watch</p>
+						<p class="text-[30px] text-[red] font-bold">→</p>
+					</div>
+				</div>
+				<div class="relative flex flex-col gap-[20px]">
+					<img src="/img/image copy 15.png" alt="">
+					<div class="flex gap-[5px] absolute top-5 left-5 items-center bg-white p-1 rounded-lg px-2">
+						<img src="/img/Files.png" alt="">
+						<p>Article</p>
+					</div>
+					<div class="flex gap-[10px] text-[gray]">
+						<p>Design</p>
+						<p>|</p>
+						<div class="flex gap-[5px] items-center">
+							<img src="/img/Calendar.png" alt="">
+							<p>August 8, 2020</p>
+						</div>
+					</div>
+					<div class="flex flex-col">
+						<p class="font-bold text-[20px]">Should you choose a creative profession if you are attracted to creativity?</p>
+						<p class="text-[gray]">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...</p>
+					</div>
+					<div class="flex gap-[10px] items-center">
+						<p class="font-semibold">Read</p>
+						<p class="text-[30px] text-[red] font-bold">→</p>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
+	<footer class="flex flex-col my-[50px] p-2">
+		<section class="flex flex-col gap-[60px] items-center py-[120px] bg-[#FEDBD4]">
+			<div class="flex flex-col text-center items-center">
+				<p class="font-semibold">Don't miss anything</p>
+				<h2 class="lg:text-[46px] text-[30px] font-bold lg:w-[70%]">Subscribe to the Createx School announcements</h2>
+			</div>
+			<div class="flex gap-[24px] items-center">
+				<input class="outline-none p-2 lg:w-[300px] rounded-lg" type="text" placeholder="Your working email">
+				<button class="bg-[orangered] hover:bg-[orangered] text-white rounded-lg p-2 px-7 hover:cursor-pointer">Subscribe</button>
+			</div>
+		</section>
+		<section class="grid lg:grid-cols-5 grid-rows-1 bg-[#1E212C] p-2 gap-[20px] justify-between">
+			<div class="flex flex-col gap-[20px] items-start">
+				<img src="/img/logo copy 2.png" alt="">
+				<p class="text-[12px] text-[gray]">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
+				<img src="/img/socials copy.png" alt="">
+			</div>
+			<div class="text-[12px] text-[gray]">
+				<p class="font-bold text-white">SITE MAP</p>
+				<p>About Us</p>
+				<p>Courses</p>
+				<p>Events</p>
+				<p>Blog</p>
+				<p>Contacts</p>
+			</div>
+			<div class="text-[12px] text-[gray]">
+				<p class="font-bold text-white">Courses</p>
+				<p>Marketing</p>
+				<p>Management</p>
+				<p>HR & Recruting</p>
+				<p>Design</p>
+				<p>Development</p>
+			</div>
+			<div class="text-[12px] text-[gray]">
+				<p class="font-bold text-white">CONTACT US</p>
+				<div class="flex items-center gap-[10px]">
+					<img src="/img/iPhone.png" alt="">
+					<p>(405) 555-0128</p>
+				</div>
+				<div class="flex items-center gap-[10px]">
+					<img src="/img/Mail.png" alt="">
+					<p>hello@createx.com</p>
+				</div>
+			</div>
+			<div class="text-[12px] text-[gray] flex flex-col gap-[10px]">
+				<p class="font-bold text-white">SIGN UP TO OUR NEWSLETTER</p>
+				<div class="bg-[#393C46] flex items-center w-[70%] justify-between pr-3">
+					<input class="bg-transparent outline-none p-3" type="text" placeholder="Email address">
+					→
+				</div>
+				<p>*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+			</div>
+		</section>
+		<section class="text-white bg-[#292C37] flex justify-between py-3 p-2 flex-col lg:flex-row items-start">
+			<div class="flex flex-col lg:flex-row">
+				<p>© All rights reserved.</p>
+				<p class="flex items-center gap-[5px]">Made with <img src="/img/Heart.png" alt=""> by Createx Studio </p>
+			</div>
+			<a href="#top" class="text-[gray] hover:text-white">GO TO TOP</a>
+		</section>
+	</footer>
 </body>
 
 </html>
