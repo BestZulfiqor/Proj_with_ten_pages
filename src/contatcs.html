@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Events grid view</title>
+	<title>Contacts</title>
 	<link rel="stylesheet" href="output.css">
 </head>
 
@@ -17,8 +17,8 @@
 				<a class="hover:text-[red]" href="#">About Us</a>
 				<a class="hover:text-[red]" href="courses.html">Courses</a>
 				<a class="hover:text-[red]" href="events.html">Events</a>
-				<a class="hover:text-[red] text-red-600" href="blog.html">Blog</a>
-				<a class="hover:text-[red]" href="contatcs.html">Contacts</a>
+				<a class="hover:text-[red]" href="blog.html">Blog</a>
+				<a class="hover:text-[red] text-red-600" href="contatcs.html">Contacts</a>
 			</div>
 		</div>
 		<div class="flex gap-[10px]">
@@ -30,298 +30,77 @@
 		</div>
 	</navbar>
 	<main class="p-2">
-		<section class="p-2">
-			<div class="text-[gray] flex items-center justify-between flex-wrap">
-				<div class="flex flex-wrap gap-[10px]  items-center justify-between">
-					<p
-						class="p-[10px] border-2 border-transparent hover:border-2 hover:text-[orangered] hover:border-[orangered]">
-						All</p>
-					<div
-						class="flex gap-[10px] items-center p-[10px] border-2 border-transparent hover:border-2 hover:text-[orangered] hover:border-[orangered]">
-						<img src="/img/Files.png" alt="">
-						<p>Articles</p>
+		<section class="flex flex-col lg:flex-row justify-between gap-[20px]">
+			<div class="flex flex-col gap-[20px]"> 
+				<div>
+					<p class="text-[20px] font-semibold">Contact info</p>
+					<h2 class="text-[46px] font-bold">Get in touch</h2>
+				</div>
+				<div class="flex items-center gap-[10px]">
+					<img src="/img/Chat copy.png" alt="">
+					<div>
+						<p class="text-[14px] text-[gray]">Talk to us</p>
+						<p class="text-[18px]">hello@createx.com</p>
 					</div>
-					<div
-						class="flex gap-[10px] items-center p-[10px] border-2 border-transparent hover:border-2 hover:text-[orangered] hover:border-[orangered]">
-						<img src="/img/Files.png" alt="">
-						<p>Videos</p>
+				</div>
+				<div class="flex items-center gap-[10px]">
+					<img src="/img/iPhone (1).png" alt="">
+					<div>
+						<p class="text-[14px] text-[gray]">Call us</p>
+						<p class="text-[18px]">(405) 555-0128</p>
 					</div>
-					<div
-						class="flex gap-[10px] items-center p-[10px] border-2 border-transparent hover:border-2 hover:text-[orangered] hover:border-[orangered]">
-						<img src="/img/mic.png" alt="">
-						<p>Podcasts</p>
+				</div>
+				<div class="flex items-center gap-[10px]">
+					<img src="/img/outline.png" alt="">
+					<div>
+						<p class="text-[14px] text-[gray]">Address:</p>
+						<p class="text-[18px]">2464 Royal Ln. Mesa, New Jersey 45463, USA</p>
 					</div>
+				</div>
+				<div class="flex flex-col gap-[10px]">
+					<p class="text-[20px]">Follow us:</p>
+					<img src="/img/socials (3).png" alt="">
+				</div>
+			</div>
+			<img src="/img/image copy 3.jpg" alt="">
+		</section>
+		<section  class="flex flex-col lg:flex-row justify-between gap-[20px]">
+			<img src="/img/illustration (5).png" alt="">
+			<div class="flex flex-col gap-[20px]">
+				<div>
+					<p class="text-[20px] font-semibold">Any questions?</p>
+					<h2 class="text-[46px] font-bold">Drop us a line</h2>
+				</div>
+				<div class="flex flex-col lg:flex-row gap-[20px]">
+					<div class="flex gap-[10px] flex-col">
+						<label for="">First Name*</label>
+						<input class="outline-none p-2 lg:w-[300px] rounded-lg shadow-[0px_0px_2px_gray]" type="text" placeholder="Your first name">
+					</div>
+					<div class="flex gap-[10px] flex-col">
+						<label for="">Last  Name*</label>
+						<input class="outline-none p-2 lg:w-[300px] rounded-lg shadow-[0px_0px_2px_gray]" type="text" placeholder="Your last name">
+					</div>
+				</div>
+				<div class="flex flex-col lg:flex-row gap-[20px]">
+					<div class="flex gap-[10px] flex-col">
+						<label for="">Email*</label>
+						<input class="outline-none p-2 lg:w-[300px] rounded-lg shadow-[0px_0px_2px_gray]" type="text" placeholder="Your working email">
+					</div>
+					<div class="flex gap-[10px] flex-col">
+						<label for="">Phone</label>
+						<input class="outline-none p-2 lg:w-[300px] rounded-lg shadow-[0px_0px_2px_gray]" type="text" placeholder="Your phone number">
+					</div>
+				</div>
+				<div class="flex flex-col gap-[10px]">
+					<label for="">Message*</label>
+					<textarea class="outline-none p-2 lg:w-[300px] rounded-lg shadow-[0px_0px_2px_gray]" name="" id="" placeholder="Your message"></textarea>
 				</div>
 				<div class="flex gap-[20px]">
-					<div class="flex items-center gap-[20px]">
-						<p class="font-semibold">Event category</p>
-						<select class="py-2 px-1 shadow-[0px_0px_2px_gray] outline-none">
-							<option value="4">All theme</option>
-							<option value="1">Dark</option>
-							<option value="2">Light</option>
-							<option value="3">Blue</option>
-						</select>
-					</div>
-					<div class="flex items-center justify-between pr-3 border-2">
-						<input class="bg-transparent outline-none py-2 px-1 w-[70px] lg:w-auto" type="text"
-							placeholder="Search course...">
-						<img class="cursor-pointer" src="/img/Vector (Stroke).png" alt="">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="py-[50px] flex flex-col gap-[30px] items-center">
-			<div class="grid lg:grid-cols-3 gap-[20px]">
-				<div class="relative flex flex-col gap-[20px]">
-					<img src="/img/image copy 13.png" alt="">
-					<div class="flex gap-[5px] absolute top-5 left-5 items-center bg-white p-1 rounded-lg px-2">
-						<img src="/img/mic.png" alt="">
-						<p>Podcast</p>
-					</div>
-					<div class="flex gap-[10px] text-[gray]">
-						<p>Marketing</p>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Calendar.png" alt="">
-							<p>September 4, 2020</p>
-						</div>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Clock.png" alt="">
-							<p>36 min</p>
-						</div>
-					</div>
-					<div class="flex flex-col">
-						<p class="font-bold text-[20px]">What is traffic arbitrage and does it really make money?</p>
-						<p class="text-[gray]">Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh
-							urna urna sagittis faucibus...</p>
-					</div>
 					<div class="flex gap-[10px] items-center">
-						<p class="font-semibold">Listen</p>
-						<p class="text-[30px] text-[red] font-bold">→</p>
+						<img class="hover:cursor-pointer" src="/img/checked.png" alt="">
+						<p>I agree to receive communications from Createx Online School</p>
 					</div>
-				</div>
-				<div class="relative flex flex-col gap-[20px]">
-					<img src="/img/image copy.jpg" alt="">
-					<div class="flex gap-[5px] absolute top-5 left-5 items-center bg-white p-1 rounded-lg px-2">
-						<img src="/img/Play.png" alt="">
-						<p>Video</p>
-					</div>
-					<div class="flex gap-[10px] text-[gray]">
-						<p>Management</p>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Calendar.png" alt="">
-							<p>August 25, 2020</p>
-						</div>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Clock.png" alt="">
-							<p>45 min</p>
-						</div>
-					</div>
-					<div class="flex flex-col">
-						<p class="font-bold text-[20px]">What to do and who to talk to if you want to get feedback on
-							the product</p>
-						<p class="text-[gray]">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis
-							proin dignissim lacus, purus gravida...</p>
-					</div>
-					<div class="flex gap-[10px] items-center">
-						<p class="font-semibold">Watch</p>
-						<p class="text-[30px] text-[red] font-bold">→</p>
-					</div>
-				</div>
-				<div class="relative flex flex-col gap-[20px]">
-					<img src="/img/image copy 15.png" alt="">
-					<div class="flex gap-[5px] absolute top-5 left-5 items-center bg-white p-1 rounded-lg px-2">
-						<img src="/img/Files.png" alt="">
-						<p>Article</p>
-					</div>
-					<div class="flex gap-[10px] text-[gray]">
-						<p>Design</p>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Calendar.png" alt="">
-							<p>August 8, 2020</p>
-						</div>
-					</div>
-					<div class="flex flex-col">
-						<p class="font-bold text-[20px]">Should you choose a creative profession if you are attracted to
-							creativity?</p>
-						<p class="text-[gray]">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor,
-							viverra sed vulputate ultrices...</p>
-					</div>
-					<div class="flex gap-[10px] items-center">
-						<p class="font-semibold">Read</p>
-						<p class="text-[30px] text-[red] font-bold">→</p>
-					</div>
-				</div>
-			</div>
-			<div class="grid lg:grid-cols-[1fr,450px] gap-[20px]">
-				<div class="relative flex flex-col gap-[20px]">
-					<img src="/img/image.jpg" alt="">
-					<div class="flex gap-[5px] absolute top-5 left-5 items-center bg-white p-1 rounded-lg px-2">
-						<img src="/img/mic.png" alt="">
-						<p>Podcast</p>
-					</div>
-					<div class="flex gap-[10px] text-[gray]">
-						<p>Article</p>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Calendar.png" alt="">
-							<p>September 4, 2020</p>
-						</div>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Clock.png" alt="">
-							<p>36 min</p>
-						</div>
-					</div>
-					<div class="flex flex-col">
-						<p class="font-bold text-[20px]">What is traffic arbitrage and does it really make money?</p>
-						<p class="text-[gray]">Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus bibendum diam adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae pellentesque mi etiam. Morbi commodo tempor, massa vivamus. A molestie id semper fermentum pretium...</p>
-					</div>
-					<div class="flex gap-[10px] items-center">
-						<p class="font-semibold">Listen</p>
-						<p class="text-[30px] text-[red] font-bold">→</p>
-					</div>
-				</div>
-				<div class="relative flex flex-col gap-[20px]">
-					<img src="/img/image copy 14.png" alt="">
-					<div class="flex gap-[5px] absolute top-5 left-5 items-center bg-white p-1 rounded-lg px-2">
-						<img src="/img/Play.png" alt="">
-						<p>Video</p>
-					</div>
-					<div class="flex gap-[10px] text-[gray]">
-						<p>Management</p>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Calendar.png" alt="">
-							<p>August 25, 2020</p>
-						</div>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Clock.png" alt="">
-							<p>45 min</p>
-						</div>
-					</div>
-					<div class="flex flex-col">
-						<p class="font-bold text-[20px]">What to do and who to talk to if you want to get feedback on
-							the product</p>
-						<p class="text-[gray]">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis
-							proin dignissim lacus, purus gravida...</p>
-					</div>
-					<div class="flex gap-[10px] items-center">
-						<p class="font-semibold">Watch</p>
-						<p class="text-[30px] text-[red] font-bold">→</p>
-					</div>
-				</div>
-			</div>
-			<div class="grid lg:grid-cols-3 gap-[20px]">
-				<div class="relative flex flex-col gap-[20px]">
-					<img src="/img/image copy 26.png" alt="">
-					<div class="flex gap-[5px] absolute top-5 left-5 items-center bg-white p-1 rounded-lg px-2">
-						<img src="/img/mic.png" alt="">
-						<p>Podcast</p>
-					</div>
-					<div class="flex gap-[10px] text-[gray]">
-						<p>Marketing</p>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Calendar.png" alt="">
-							<p>September 4, 2020</p>
-						</div>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Clock.png" alt="">
-							<p>36 min</p>
-						</div>
-					</div>
-					<div class="flex flex-col">
-						<p class="font-bold text-[20px]">What are color profiles and how they work in graphic design</p>
-						<p class="text-[gray]">Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh
-							urna urna sagittis faucibus...</p>
-					</div>
-					<div class="flex gap-[10px] items-center">
-						<p class="font-semibold">Listen</p>
-						<p class="text-[30px] text-[red] font-bold">→</p>
-					</div>
-				</div>
-				<div class="relative flex flex-col gap-[20px]">
-					<img src="/img/image copy 27.png" alt="">
-					<div class="flex gap-[5px] absolute top-5 left-5 items-center bg-white p-1 rounded-lg px-2">
-						<img src="/img/Play.png" alt="">
-						<p>Video</p>
-					</div>
-					<div class="flex gap-[10px] text-[gray]">
-						<p>Management</p>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Calendar.png" alt="">
-							<p>August 25, 2020</p>
-						</div>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Clock.png" alt="">
-							<p>45 min</p>
-						</div>
-					</div>
-					<div class="flex flex-col">
-						<p class="font-bold text-[20px]">Startup: how to build a team that will live longer than a year</p>
-						<p class="text-[gray]">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis
-							proin dignissim lacus, purus gravida...</p>
-					</div>
-					<div class="flex gap-[10px] items-center">
-						<p class="font-semibold">Watch</p>
-						<p class="text-[30px] text-[red] font-bold">→</p>
-					</div>
-				</div>
-				<div class="relative flex flex-col gap-[20px]">
-					<img src="/img/image copy 2.jpg" alt="">
-					<div class="flex gap-[5px] absolute top-5 left-5 items-center bg-white p-1 rounded-lg px-2">
-						<img src="/img/Files.png" alt="">
-						<p>Article</p>
-					</div>
-					<div class="flex gap-[10px] text-[gray]">
-						<p>Design</p>
-						<p>|</p>
-						<div class="flex gap-[5px] items-center">
-							<img src="/img/Calendar.png" alt="">
-							<p>August 8, 2020</p>
-						</div>
-					</div>
-					<div class="flex flex-col">
-						<p class="font-bold text-[20px]">How to get customers to love your business from the start</p>
-						<p class="text-[gray]">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor,
-							viverra sed vulputate ultrices...</p>
-					</div>
-					<div class="flex gap-[10px] items-center">
-						<p class="font-semibold">Read</p>
-						<p class="text-[30px] text-[red] font-bold">→</p>
-					</div>
-				</div>
-			</div>
-			<div>	
-				<ul class="flex gap-[10px] text-[20px]">
-					<li class="hover:text-red-500">1</li>
-					<li class="hover:text-red-500">2</li>
-					<li class="hover:text-red-500">3</li>
-					<li class="hover:text-red-500">4</li>
-					<li class="hover:text-red-500">→</li>
-				</ul>
-			</div>
-		</section>
-		<section class="flex flex-col lg:flex-row gap-[20px] justify-between bg-[#F4F5F6] items-center">
-			<img src="/img/illustration (4).png" alt="">
-			<div class="lg:w-[50%] flex flex-col gap-[30px]">
-				<h2 class="lg:text-[32px] text-[25px] font-bold">Want to get the best articles weekly? Subscribe to our newsletter!</h2>
-				<div class="flex gap-[24px] items-center">
-					<input class="outline-none p-2 lg:w-[300px] rounded-lg" type="text" placeholder="Your working email">
-					<button class="bg-[orangered] hover:bg-[orangered] text-white rounded-lg p-2 px-7 hover:cursor-pointer">Subscribe</button>
-				</div>
-				<div class="flex gap-[10px] items-center">
-					<img class="hover:cursor-pointer" src="/img/checked.png" alt="">
-					<p>I agree to receive communications from Createx Online School</p>
+					<button class="text-white bg-[#FC4A27] p-3 px-[100px] rounded-lg">Send message</button>			
 				</div>
 			</div>
 		</section>
