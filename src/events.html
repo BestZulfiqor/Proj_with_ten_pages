@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="output.css">
+</head>
+
+<body class="max-w-[1400px] m-auto">
+	<div id="top"></div>
+	<navbar class="flex justify-between p-5 items-center font-semibold gap-[10px]">
+		<div class="flex gap-[60px]">
+			<a href="index.html"><img src="/img/logo.png" alt=""></a>
+			<div class="hidden lg:flex gap-[40px]">
+				<a class="hover:text-[red]" href="#">About Us</a>
+				<a class="hover:text-[red]" href="courses.html">Courses</a>
+				<a class="hover:text-[red] text-red-600" href="events.html">Events</a>
+				<a class="hover:text-[red]" href="#">Blog</a>
+				<a class="hover:text-[red]" href="#">Contacts</a>
+			</div>
+		</div>
+		<div class="flex gap-[10px]">
+			<button class="text-white bg-[#FC4A27] p-3 rounded-lg">Get consultation</button>
+			<div class="flex gap-[5px] items-center">
+				<img src="/img/Profile.png" alt="">
+				<button class="mr-[10px]">Log in / Register</button>
+			</div>
+		</div>
+	</navbar>
+	<main>
+		<section>
+			<div class="flex flex-col gap-[32px] items-center ">
+				<div class="text-center py-[60px]">
+					<p class="font-semibold">Our events</p>
+					<h2 class="text-[46px] font-bold">Lectures, workshops & master-classes</h2>
+				</div>
+				<div class="flex justify-between gap-[40px]">
+					<div class="flex items-center gap-[20px]">
+						<p class="font-semibold">Event category</p>
+						<select class="py-2 px-1 shadow-[0px_0px_2px_gray] outline-none">
+							<option value="4">All theme</option>
+							<option value="1">Dark</option>
+							<option value="2">Light</option>
+							<option value="3">Blue</option>
+						</select>
+					</div>
+					<div class="flex items-center gap-[20px]">
+						<p class="font-semibold">Sort by</p>
+						<select class="py-2 px-1 shadow-[0px_0px_2px_gray] outline-none">
+							<option value="4">newest</option>
+							<option value="1">oldest</option>
+							<option value="2">yongest</option>
+						</select>
+					</div>
+					<div class="flex items-center gap-[20px]">
+						<p class="font-semibold">Show</p>
+						<input class="shadow-[0px_0px_2px_gray] outline-none" type="number" >
+						<p class="text-[gray]">events per page</p>
+					</div>
+					<div class="flex ">
+						<input class="outline-none" type="text" placeholder="Search event...">
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
