@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Events</title>
+	<title>Events grid view</title>
 	<link rel="stylesheet" href="output.css">
 </head>
 
@@ -64,25 +64,20 @@
 						<img class="cursor-pointer" src="/img/search.png" alt="">
 					</div>
 					<div>
-						<a href="events_view.html"><img src="/img/view.png" alt=""></a>
+						<a href="events.html"><img src="/img/view (1).png" alt=""></a>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="flex flex-col gap-[50px] mt-[80px] items-center py-[80px] p-2">
-			<div class="flex flex-col gap-[24px] p-2">
+			<div class="grid grid-cols-3 grid-rows-3 gap-[24px] p-2">
 				<div
-					class="flex flex-col lg:flex-row items-start lg:items-center gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-auto w-[95%] m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
-					<div class="flex gap-[20px] items-center">
-						<div class="text-[48px] text-[red]">
-							05
-						</div>
-						<div>
-							<p class="font-bold text-[20px]">August</p>
+					class="flex flex-col  gap-[40px] bg-white justify-between rounded-lg p-2 px-3  m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
+					<div>
+						<div class="text-[48px] text-[red]">05 Aug</div>
 							<p class="text-[gray]">11:00 – 14:00</p>
-						</div>
 					</div>
-					<div class="lg:w-[66%]">
+					<div>
 						<p class="text-[20px] font-bold">Formation of the organizational structure of the company in the
 							face of uncertainty.</p>
 						<p class="text-[gray]">Onine master-class</p>
@@ -92,17 +87,14 @@
 						more</button>
 				</div>
 				<div
-					class="flex flex-col lg:flex-row items-start lg:items-center gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-[100%] w-[95%] m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
-					<div class="flex gap-[20px] items-center">
+					class="flex flex-col  gap-[40px] bg-white justify-between rounded-lg p-2 px-3  m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
+					<div>
 						<div class="text-[48px] text-[red]">
-							24
+							24 Jul
 						</div>
-						<div>
-							<p class="font-bold text-[20px]">July</p>
 							<p class="text-[gray]">11:00 – 12:30</p>
-						</div>
 					</div>
-					<div class="lg:w-[66%]">
+					<div>
 						<p class="text-[20px] font-bold">Building a customer service department. Best Practices.</p>
 						<p class="text-[gray]">Onine lecture</p>
 					</div>
@@ -111,18 +103,64 @@
 						more</button>
 				</div>
 				<div
-					class="flex flex-col lg:flex-row items-start lg:items-center gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-auto w-[95%] m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
-					<div class="flex gap-[20px] items-center">
+					class="flex flex-col gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-auto w-[95%] m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
+					<div>
 						<div class="text-[48px] text-[red]">
-							16
+							16 Aug
 						</div>
-						<div>
-							<p class="font-bold text-[20px]">August</p>
 							<p class="text-[gray]">10:00 – 13:00</p>
-						</div>
 					</div>
-					<div class="lg:w-[66%]">
-						<p class="text-[20px] font-bold">How to apply methods of speculative design in practice.
+					<div>
+						<p class="text-[20px] font-bold">How to apply methods of speculative in practice.
+							Worldbuilding prototyping.</p>
+						<p class="text-[gray]">Onine workshop</p>
+					</div>
+					<button
+						class="text-[orangered] border-2 border-[#FC4A27] p-3 px-9 rounded-lg hover:bg-[orangered] hover:text-white">View
+						more</button>
+				</div>
+
+				<div
+					class="flex flex-col  gap-[40px] bg-white justify-between rounded-lg p-2 px-3  m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
+					<div>
+						<div class="text-[48px] text-[red]">05 Aug</div>
+							<p class="text-[gray]">11:00 – 14:00</p>
+					</div>
+					<div>
+						<p class="text-[20px] font-bold">Formation of the organizational structure of the company in the
+							face of uncertainty.</p>
+						<p class="text-[gray]">Onine master-class</p>
+					</div>
+					<button
+						class="text-[orangered] border-2 border-[#FC4A27] p-3 px-9 rounded-lg hover:bg-[orangered] hover:text-white">View
+						more</button>
+				</div>
+				<div
+					class="flex flex-col  gap-[40px] bg-white justify-between rounded-lg p-2 px-3  m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
+					<div>
+						<div class="text-[48px] text-[red]">
+							24 Jul
+						</div>
+							<p class="text-[gray]">11:00 – 12:30</p>
+					</div>
+					<div>
+						<p class="text-[20px] font-bold">Building a customer service department. Best Practices.</p>
+						<p class="text-[gray]">Onine lecture</p>
+					</div>
+					<button
+						class="text-[orangered] border-2 border-[#FC4A27] p-3 px-9 rounded-lg hover:bg-[orangered] hover:text-white">View
+						more</button>
+				</div>
+				<div
+					class="flex flex-col gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-auto w-[95%] m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
+					<div>
+						<div class="text-[48px] text-[red]">
+							16 Aug
+						</div>
+							<p class="text-[gray]">10:00 – 13:00</p>
+					</div>
+					<div>
+						<p class="text-[20px] font-bold">How to apply methods of speculative in practice.
 							Worldbuilding prototyping.</p>
 						<p class="text-[gray]">Onine workshop</p>
 					</div>
@@ -131,17 +169,12 @@
 						more</button>
 				</div>
 				<div
-					class="flex flex-col lg:flex-row items-start lg:items-center gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-auto w-[95%] m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
-					<div class="flex gap-[20px] items-center">
-						<div class="text-[48px] text-[red]">
-							05
-						</div>
-						<div>
-							<p class="font-bold text-[20px]">August</p>
+					class="flex flex-col  gap-[40px] bg-white justify-between rounded-lg p-2 px-3  m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
+					<div>
+						<div class="text-[48px] text-[red]">05 Aug</div>
 							<p class="text-[gray]">11:00 – 14:00</p>
-						</div>
 					</div>
-					<div class="lg:w-[66%]">
+					<div>
 						<p class="text-[20px] font-bold">Formation of the organizational structure of the company in the
 							face of uncertainty.</p>
 						<p class="text-[gray]">Onine master-class</p>
@@ -151,17 +184,14 @@
 						more</button>
 				</div>
 				<div
-					class="flex flex-col lg:flex-row items-start lg:items-center gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-[100%] w-[95%] m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
-					<div class="flex gap-[20px] items-center">
+					class="flex flex-col  gap-[40px] bg-white justify-between rounded-lg p-2 px-3  m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
+					<div>
 						<div class="text-[48px] text-[red]">
-							24
+							24 Jul
 						</div>
-						<div>
-							<p class="font-bold text-[20px]">July</p>
 							<p class="text-[gray]">11:00 – 12:30</p>
-						</div>
 					</div>
-					<div class="lg:w-[66%]">
+					<div>
 						<p class="text-[20px] font-bold">Building a customer service department. Best Practices.</p>
 						<p class="text-[gray]">Onine lecture</p>
 					</div>
@@ -170,77 +200,15 @@
 						more</button>
 				</div>
 				<div
-					class="flex flex-col lg:flex-row items-start lg:items-center gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-auto w-[95%] m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
-					<div class="flex gap-[20px] items-center">
+					class="flex flex-col gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-auto w-[95%] m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
+					<div>
 						<div class="text-[48px] text-[red]">
-							16
+							16 Aug
 						</div>
-						<div>
-							<p class="font-bold text-[20px]">August</p>
 							<p class="text-[gray]">10:00 – 13:00</p>
-						</div>
 					</div>
-					<div class="lg:w-[66%]">
-						<p class="text-[20px] font-bold">How to apply methods of speculative design in practice.
-							Worldbuilding prototyping.</p>
-						<p class="text-[gray]">Onine workshop</p>
-					</div>
-					<button
-						class="text-[orangered] border-2 border-[#FC4A27] p-3 px-9 rounded-lg hover:bg-[orangered] hover:text-white">View
-						more</button>
-				</div>
-				<div
-					class="flex flex-col lg:flex-row items-start lg:items-center gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-auto w-[95%] m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
-					<div class="flex gap-[20px] items-center">
-						<div class="text-[48px] text-[red]">
-							05
-						</div>
-						<div>
-							<p class="font-bold text-[20px]">August</p>
-							<p class="text-[gray]">11:00 – 14:00</p>
-						</div>
-					</div>
-					<div class="lg:w-[66%]">
-						<p class="text-[20px] font-bold">Formation of the organizational structure of the company in the
-							face of uncertainty.</p>
-						<p class="text-[gray]">Onine master-class</p>
-					</div>
-					<button
-						class="text-[orangered] border-2 border-[#FC4A27] p-3 px-9 rounded-lg hover:bg-[orangered] hover:text-white">View
-						more</button>
-				</div>
-				<div
-					class="flex flex-col lg:flex-row items-start lg:items-center gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-[100%] w-[95%] m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
-					<div class="flex gap-[20px] items-center">
-						<div class="text-[48px] text-[red]">
-							24
-						</div>
-						<div>
-							<p class="font-bold text-[20px]">July</p>
-							<p class="text-[gray]">11:00 – 12:30</p>
-						</div>
-					</div>
-					<div class="lg:w-[66%]">
-						<p class="text-[20px] font-bold">Building a customer service department. Best Practices.</p>
-						<p class="text-[gray]">Onine lecture</p>
-					</div>
-					<button
-						class="text-[orangered] border-2 border-[#FC4A27] p-3 px-9 rounded-lg hover:bg-[orangered] hover:text-white">View
-						more</button>
-				</div>
-				<div
-					class="flex flex-col lg:flex-row items-start lg:items-center gap-[40px] bg-white justify-between rounded-lg p-2 px-3 lg:w-auto w-[95%] m-auto shadow-[0px_0px_2px_gray] hover:shadow-2xl">
-					<div class="flex gap-[20px] items-center">
-						<div class="text-[48px] text-[red]">
-							16
-						</div>
-						<div>
-							<p class="font-bold text-[20px]">August</p>
-							<p class="text-[gray]">10:00 – 13:00</p>
-						</div>
-					</div>
-					<div class="lg:w-[66%]">
-						<p class="text-[20px] font-bold">How to apply methods of speculative design in practice.
+					<div>
+						<p class="text-[20px] font-bold">How to apply methods of speculative in practice.
 							Worldbuilding prototyping.</p>
 						<p class="text-[gray]">Onine workshop</p>
 					</div>
