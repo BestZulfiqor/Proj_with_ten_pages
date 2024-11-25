@@ -726,6 +726,10 @@ video {
   width: 60px;
 }
 
+.w-\[66\%\] {
+  width: 66%;
+}
+
 .max-w-\[1200px\] {
   max-width: 1200px;
 }
@@ -746,8 +750,16 @@ video {
   cursor: pointer;
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-rows-1 {
   grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1230,6 +1242,14 @@ video {
 
 .text-\[28px\] {
   font-size: 28px;
+}
+
+.text-\[19px\] {
+  font-size: 19px;
+}
+
+.text-\[19\.5px\] {
+  font-size: 19.5px;
 }
 
 .font-bold {
